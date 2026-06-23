@@ -4,21 +4,24 @@
     <meta charset="utf-8"> 
 <head><title> elisso&hamza </title> 
   <h1>this website is for me and my love with our memories and moments </h1>
+
+    <button id="enterButton">Open our website ❤️</button>
+
 <script>
-  let date = prompt("We are together from:");
-  let name = prompt("What is your name?");
+  document.getElementById("enterButton").addEventListener("click", function () {
+    let date = prompt("We are together from:");
+    let name = prompt("What is your name?");
 
-  if (date === "23.02.2026" && name === "gineka tou hamza") {
-    alert("Welcome, " + name + "!");
-      else if (date === "" || name === "" || date === null || name === null) {
-  alert("You must fill in both fields.");
-  window.close();
-  } else {
-    alert("Sorry, you are not allowed to enter this website!");
-    window.close();
-  }
+    if (date === "23.02.2026" && name === "gineka tou hamza") {
+      alert("Welcome, " + name + "!");
+      alert("I love you!");
+
+      document.getElementById("enterButton").style.display = "none";
+    } else {
+      alert("Sorry, you are not allowed to enter this website!");
+    }
+  });
 </script>
-
 
   <script> alert("I love you!");</script>
 </head>
